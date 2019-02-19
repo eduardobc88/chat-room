@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name   : "full-stack-developer-express",
+    name   : "full-stack-developer",
     script : "./server-app/server.js",
     instances  : 1,
     exec_mode  : "cluster",

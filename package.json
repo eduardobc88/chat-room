@@ -1,11 +1,11 @@
 {
-  "name": "full-stack-developer-express",
+  "name": "full-stack-developer",
   "version": "1.0.0",
   "description": "Full Stack Developer Test",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "pm2:start": "node_modules/pm2/bin/pm2 start server.js -i 1 --name='chat-room'",
+    "pm2:start": "node_modules/pm2/bin/pm2 start ./server-app/server.js -i 1 --name='chat-room'",
     "pm2:start-watch": "node_modules/pm2/bin/pm2 start ecosystem.config.js",
     "pm2:kill": "node_modules/pm2/bin/pm2 kill",
     "pm2:monit": "node_modules/pm2/bin/pm2 monit",
