@@ -1,0 +1,56 @@
+{
+  "name": "full-stack-developer-express",
+  "version": "1.0.0",
+  "description": "Full Stack Developer Test",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "pm2:start": "node_modules/pm2/bin/pm2 start server.js -i 1 --name='chat-room'",
+    "pm2:start-watch": "node_modules/pm2/bin/pm2 start ecosystem.config.js",
+    "pm2:kill": "node_modules/pm2/bin/pm2 kill",
+    "pm2:monit": "node_modules/pm2/bin/pm2 monit",
+    "pm2:global-logs": "node_modules/pm2/bin/pm2 logs",
+    "webpack:site-watch": "webpack --config webpack-config.js -w --mode=development",
+    "build": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expressjs"
+  ],
+  "author": "https://www.reactive-web.com",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "connect-mongodb-session": "^2.0.7",
+    "ejs": "^2.6.1",
+    "fastify": "^1.13.4",
+    "fastify-auth": "^0.3.0",
+    "fastify-cookie": "^2.1.5",
+    "fastify-cors": "^1.0.0",
+    "fastify-formbody": "^2.0.3",
+    "fastify-helmet": "^3.0.0",
+    "fastify-session": "^1.2.1",
+    "fastify-static": "^1.1.0",
+    "fastify-url-data": "^2.2.0",
+    "mongoose": "^5.3.10",
+    "node-datetime": "^2.1.2",
+    "pm2": "^3.2.2",
+    "point-of-view": "^2.1.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "vue": "^2.6.6",
+    "vue-axios": "^2.1.4",
+    "vue-loader": "15.4.2",
+    "vue-mc": "^0.5.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.6.6",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body style="margin: 0px;">
+        <style>
+            html {
+                box-sizing: border-box;
+                height: 100%;
+            }
+            body {
+                background-color: #f2f2f2;
+                box-sizing: border-box;
+                font-family: 'Roboto', sans-serif;
+                height: 100%;
+            }
+            ::selection {
+                background: #607d8b;
+                color: white;
+            }
+            ::-moz-selection {
+                background: #607d8b;
+                color: white;
+            }
+        </style>
+        <div id="app"></div>
+        <script type='text/javascript'>
+          window.user =<%-JSON.stringify(user)%>;
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.slim.js'></script>
+        <script src='/public/js/chat-room-app-bundle.js' charset="utf-8"></script>
+    </body>
+</html>
